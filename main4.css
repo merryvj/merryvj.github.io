@@ -1,0 +1,39 @@
+:root{
+  --turquoise: hsla(171, 100%, 40%,1);
+  --turquoise-light: hsla(171, 100%, 41%,0.15);
+}
+
+.centerTiles{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60vw;
+}
+
+
+.workTag{
+  border-radius: 10px;
+  background-color: lightgrey;
+  padding: 5px 15px 5px 15px;
+  margin-right: 5px;
+  color: var(--turquoise);
+  background: var(--turquoise-light);
+}
+
+.workTags{
+  margin-top: 0.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.card{
+  background-color: white;
+  padding: 1.75rem;
+  padding-top: 2.5rem;
+  border-radius: 6px;
+  box-shadow: 0 0px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.10);
+  transition: 0.25s ease;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow: 0 6px 30px rgba(0,0,0,0.08), 0 6px 25px rgba(0,0,0,0.10);
+}
