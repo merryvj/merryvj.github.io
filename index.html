@@ -3,84 +3,141 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <title>Mary Jiang</title>
     <link rel="stylesheet" href="main4.css">
 
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/6c0b588da5.js"></script>
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300, 300i,400,600,700,800&display=swap" rel="stylesheet">
+
+
+
+
+    <script src="main.js"></script>
+
+
   </head>
   <body>
 
-  <section class="section">
-    <div class="container">
+      <section id="intro" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+          <div class="wrapper">
+            <h1 id="introText">
+                Hi, I'm Mary! <br>
+                I love to <span id="typedStrings"></span>
+            </h1>
+            <div style="padding-right: 10vw; line-height: 1.6"> I'm a 2nd year student at Duke University building skills to launch ideas into reality: from design to development. I aspire to create friendly and inclusive experiences that promote our wellbeing. </div>
 
-    </div>
+            <br>
+            <i class="fab fa-canadian-maple-leaf toolTip" style="color: salmon">
+              <!--<span class="toolTipText"> Born [in the US] & raised in <a href="https://en.wikipedia.org/wiki/Edmonton" target="_blank"> Canada</a></span>-->
+            </i>
 
-  </section>
-  <section class="section">
-    <div class="container">
-      <div class="centerTiles">
-        <div class="tile is-ancestor">
-          <div class="tile is-parent">
-            <div class="tile is-child card">
 
-              <h1 class="title is-4 is-spaced">Creating an AR-enabled vistor experience </h1>
-              <h2 class="subtitle is-6"> Summer 2019 Internship at Duke Office of Information Technology. </h2>
-              <div class="workTags">
-                <span class="workTag">Case Study</span>
-                <span class="workTag">UX</span>
+      
+          </div>
+      
+        </section>
+
+  
+    <section>
+
+      <div class="wrapper">
+          <div class="cards"  data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+
+            <a href="pages/OIT.html">
+                <div class="card">
+                    <h1>Creating an AR-enabled visitor experience </h1>
+                    <h2> Summer 2019 Internship at Duke Office of Information Technology. </h2>
+                    <div class="workTags">
+                      <span class="workTag">CASE STUDY</span>
+                      <span class="workTag">CODE</span>
+                    </div>
+                    <img style="width: 100%" src="homeImages/GroupDukeOITPreview.png">
+                </div>
+
+            </a>
+            <a href="#">
+                <div class="card">
+      
+                    <h1> Branding, visual design, and illustration </h1>
+                    <h2> An assortment of learning, work, and fun from 2015 to 2018. </h2>
+                    <div class="workTags">
+                        <span class="workTag">DESIGN</span>
+                      </div>
+                    <img style="width: 100%" src="homeImages/GroupGraphicDesignPreview.png">
+      
+                </div>
+            </a>
+              
+      
+              <div class="card">
+                  <h1 class="title is-4 is-spaced">Weekly UI: From Pixels to Prototype</h1>
+                  <h2 class="subtitle is-6"> Personal challenge to build skills in visual and motion design. [UNDER CONSTRUCTION]</h2>
+                  <div class="workTags">
+                    <span class="workTag">UI</span>
+                    <span class="workTag">MOTION</span>
+                  </div>
+                  <img style="width: 100%" src="https://bulma.io/images/placeholders/128x128.png">
+      
+                </div>
+      
+               
+         
+
               </div>
-              <figure class="image is-square">
-                <img src="homeImages/GroupDukeOITPreview.png">
-              </figure>
-          </div>
+      </div>
+    </section>
+      <div class="wrapper">
+
+        <div class="smallProjects">
+            <div class="smallProjectImage" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+          
+                <img src="homeImages/Stickers.gif">
+                <div class="imgOverlay">
+                    <span> Custom Stickers </span>
+                </div>
+              </div>
+      
+              <div class="smallProjectImage" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+                
+                <img src="homeImages/guardsUp.gif">
+                <div class="imgOverlay">
+                    <span> Junior Achievement </span>
+                </div>
+              </div>
+      
 
         </div>
-
-        <div class="tile is-parent">
-          <div class="tile is-child card">
-            <h1 class="title is-4 is-spaced">Weekly UI: From Design to Prototype to Code </h1>
-            <h2 class="subtitle is-6"> Personal challenge to build skills in visual and motion design, in addition to front-end development. </h2>
-            <div class="workTags">
-              <span class="workTag">UI</span>
-              <span class="workTag">Web</span>
-            </div>
-            <figure class="image is-square">
-              <img src="https://bulma.io/images/placeholders/128x128.png">
-            </figure>
-
-          </div>
-
-
-        </div>
-      </div>
-
-      <div class="tile is-ancestor">
-        <div class="tile is-parent">
-          <div class="tile is-child card">
-
-            <h1 class="title is-4 is-spaced"> Visual design & Illustration </h1>
-            <h2 class="subtitle is-6"> An assortment of learning, work, and fun from 2015 to 2018. </h2>
-
-
-            <figure class="image is-square">
-              <img src="homeImages/GroupGraphicDesignPreview.png">
-            </figure>
-        </div>
+        
 
       </div>
 
-      <div class="tile is-parent">
+    <section>
 
 
+    </section>
+    <footer>
+        
+      <p> Designed and built by Mary Jiang &#169;2019</p>
+      <div class="footerIcons">
+          <i class="fab fa-linkedin-in"></i>
+          <i class="fab fa-github"></i>
       </div>
-    </div>
-
-      </div>
-
-
+      
+    </footer>
+    
 
 
-  </section>
+
+
+  
   </body>
 </html>
