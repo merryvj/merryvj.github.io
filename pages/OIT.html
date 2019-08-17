@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
+    <title>Mary Jiang</title>
     <link rel="stylesheet" href="project.css">
 
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -24,6 +24,15 @@
     <nav>
         <a href="../index.html"><i class="fas fa-arrow-left fa-2x"></i></a>
     </nav>
+<!--
+<div class="sideNav">
+      <ul>
+        <li><a href="#overview"> Overview</a> </li>
+        <li><a href="#overview"> Overview</a></li>
+      </ul>
+    </div>
+-->
+    
     <section class="hero">
       <img data-aos="fade-left"  data-aos-duration="600" data-aos-delay="200" src="OITImages/gardensAppHero.png">
       <div data-aos="fade-right"  data-aos-duration="600" data-aos-delay="200"class="wrapper" >
@@ -31,7 +40,7 @@
         <p> Internship at the Duke Office of Information Technology</p>
       </div>
     </section>
-      <section>
+      <section id="overview">
         <div data-aos="fade-up"  data-aos-duration="600" data-aos-delay="200"  class="wrapper">
           <h1> Overview </h1>
           <div class="overview">
@@ -58,8 +67,9 @@
                 <h6> My Role </h6>
                 <p> Working on a team of 8 interns and 2 mentors from Duke OIT (including 1 team lead), I was responsible for the design and front-end implementation of our project. Throughout this project, I...
                   <ul>
+                    <li> Met with Duke University stakeholders to understand <strong> business needs </strong></li>
                     <li> Engaged my team in the <strong>human-centered design</strong> process by leading team brainstorming sessions</li>
-                    <li> Created low-fidelity <strong>wireframes </strong>in Figma and created clickable <strong>prototypes</strong> in InVision</li>
+                    <li> Created <strong>wireframes </strong>in Figma and created clickable <strong>prototypes</strong> in InVision</li>
                     <li> <strong>Implemented</strong> my designs in XCode and integrated back-end data to create a <strong>fully functioning iOS app </strong></li>
                     <li> Discussed product strategy and <strong>designing for scale</strong></li>
                   </ul>
@@ -81,9 +91,11 @@
             <div class="project-wrapper" data-aos="fade-up"  data-aos-duration="600" data-aos-delay="200">
                 <h1> The Opportunity </h1>
 
-                <p><strong>Hundreds of thousands of visitors arrive on Duke University's campus each year. </strong>Not only to watch games or tour campus as a prospective student, but to visit attractions like the Nasher Museum of Art and Sarah P. Duke Gardens. </p>
+                <p><strong>Hundreds of thousands of visitors arrive on Duke University's campus each year. </strong>Not only to watch games or tour campus as a prospective student, but to visit attractions like the Nasher Museum of Art and Sarah P. Duke Gardens. With the upcoming opening of an expensive visitor center, there's plenty of incentive to revamp the visitor experience. </p>
                 <p> <strong> We decided to make a visitor app for the Duke Gardens first. </strong> After meeting with multiple stakeholders (including Duke Athletics and one of Duke's executive VPs) , our team decided to use the gardens as a proof of concept for a visitor app that could be expanded to the rest of campus.</p>
-                <p> <strong> Did someone say 'Augmented Reality'?</strong> Besides creating a visitor app, another half of our project was focused on implementing the AR technology from our <a href="https://azure.microsoft.com/en-ca/free/search/?&OCID=AID2000061_SEM_JEGssiWT&MarinID=JEGssiWT_324570645539_microsoft%20cloud%20azure_e_c__71931115868_aud-394034018130:kwd-302939704459&lnkd=Google_Azure_Brand&dclid=COCp9Oiw_uMCFQEO5wod-HsBxw" target="_blank">project sponsor</a>. <br>A 5-week-long story short – things didn't work as expected. </p>
+                <img width="100%" src="OITImages/DukeGardensBridge.jpg">
+                <p> The Sarah P. Duke Gardens is a sprawling botanical garden open to the public, attracting over <strong>300,000 visitors </strong> each year. It is not only a top spot to see on campus, but also the local Durham/Raleigh area. </p>
+                <p> <strong> Did someone say 'Augmented Reality'?</strong> Besides creating a visitor app, another half of our project was focused on implementing the AR technology from our <a href="https://azure.microsoft.com/en-ca/free/search/?&OCID=AID2000061_SEM_JEGssiWT&MarinID=JEGssiWT_324570645539_microsoft%20cloud%20azure_e_c__71931115868_aud-394034018130:kwd-302939704459&lnkd=Google_Azure_Brand&dclid=COCp9Oiw_uMCFQEO5wod-HsBxw" target="_blank">project sponsor</a>. <br> We dreamed up possible applications of AR in our app, however as the weeks progressed, we discovered that some of our plans were impossible with our sponsor's technology. </p>
                
                 <img width="100%" src="OITImages/OITTimeline.png">
       
@@ -101,7 +113,7 @@
           <h1> Research</h1>
 
           <h6> Field visits & interviews </h6>
-          <p>My team made several trips to the Duke Gardens to observe visitors, conduct interviews with gardens staff, and to experience the gardens for ourselves. One visit included a tour of the entire gardens offered by volunteer tour guides. </p>
+          <p>To begin, my team made several trips to the Duke Gardens to observe visitors, conduct interviews with gardens staff, and to experience the gardens for ourselves. One visit included a tour of the entire gardens offered by volunteer tour guides. </p>
           <img width="100%" src="OITImages/dukegardens.png"><br><br>
           <p>We interviewed gardens staff, from tour guides to the marketing director. They shared with us some of the <strong>most commonly asked questions from visitors:</strong></p>
           <div id="visitorQuotes">
@@ -114,11 +126,19 @@
               <p>"Where is the rose garden?" (asked while standing in the Rose Garden)</p>
           </div>
           <br>
-          <p> We found that <strong>navigating the gardens with a paper map is hard</strong>, especially for first-time visitors:</p>
-          <img width="100%" src="OITImages/PastJourney.png"><br><br>
+          <p> Here's the map that the gardens provides visitors. It's pretty, but it can be tricky to find which twisty path you're on.</p>
+          <img width="60%" style="margin: auto; display: block" src="OITImages/Screen Shot 2019-08-17 at 12.12.57 AM.png">
+          <br>
 
+          <p> Unsurprisingly, we found that <strong>visitors often struggle navigating using the paper map</strong>. They don't use it every step of their visit, but it is crucial when they need to find a specific place such as a bathroom, parking lot, or iconic landmark.</p>
+          <br>
+          <h6> The current visiting experience</h6><br>
+          <img width="100%" src="OITImages/PastJourney.png"><br><br>
+          
           <h6> User personas </h6>
-          <p> From informal conversations with gardens visitors and secondary research, I created 3 "proto-personas" to help guide the rest of our design process. </p>
+          <p> From observations and informal conversations with gardens visitors, I created 3 "proto-personas" to help guide the rest of our design process. </p>
+
+          
           
         </div>
         <div class="wrapper" id="personas"> 
@@ -130,6 +150,8 @@
         <br>
 
         <div class="project-wrapper">
+            <h6> Understanding stakeholders</h6>
+            <p> At this stage, we also completed our initial stakeholder meetings with the gardens and Duke's executive board. We asked about existing initatives and data, in addition to opportunities for revenue-generation. These meetings gave us guidance on which aspects of the visitor experience to focus on, in addition to the <strong>business requirements that aligned with user needs</strong>.</p>
             <div style="border: solid 1px #efefef; width: 100%; margin: 30px"></div>
 
         </div>
@@ -183,6 +205,7 @@
               <p> I asked several other interns at Duke OIT to walk through the wireframes and tell me what they thought each screen’s function was. Everyone seemed to have a good grasp of what the app did, although the concept of “saving” favorite locations sparked discussion. What if it could generate a tour from the saved places?</p>
             </div>
 
+
         </div>
         
         
@@ -190,12 +213,27 @@
           
       </section>
       <section>
+        <div class="project-wrapper">
+          <h6>Prototyping new features</h6>
+          <p> My first set of wireframes were a simple, broad overview of the app. To explore new ideas and user flows in more detail, I created new wireframes and also a clickable prototype. Using the prototype, I asked testers to assume 2 scenarios: 1) Planning their own tour route and 2) Exploring nearby places. </p>
+        </div>
+        <br>
 
           <div class="wrapper"> 
               <img width="100%" src="OITImages/Wireframe2Map.png">
               <div style="border: solid 1px #efefef; width: 100%; margin: 30px"></div>
               <img width="100%" src="OITImages/Wireframe2Tours.png">
               
+          </div>
+          <br>
+
+          <div class="project-wrapper">
+            <h6>Testing feedback pt. 2</h6>
+            <p> This time the other OIT interns were more confused as they progressed through the route-planning taskflow. They were <strong>mostly confused by the concept, rather than by what they saw on the screens.</strong> This suggested that including onboarding might be necessary in order to provide users with enough information to build some sort of a conceptual model for this novel taskflow. </p>
+           
+            <h6>Shouldn't we verify with actual gardens visitors?</h6>
+            <p> Using other interns to test was convenient, but it didn't tell me how much actual visitors would value being able to customize their routes. However at this point my team lead asked us to start coding, and I decided to stop exploring this concept after considering the value it could bring users would not outweigh the disproportionally large amount of time/effort to develop it. </p>
+            <div style="border: solid 1px #efefef; width: 100%; margin: 30px"></div>
           </div>
       </section>
 
@@ -236,10 +274,14 @@
         <br>
 
         <div class="color-bg">
+          <div class="project-wrapper">
+              <h1>Demo Screencaps</h1>
+              <h6> Ready for stakeholder feedback </h6>
+              <p> There were still a few missing pieces (namely photos and text descriptions) and details to fix in our app at the end of the internship. Good news is that my team will be continuing our work in September! In the meantime, staff from the Duke Gardens were excited to see our progress and are now testing our app. </p>
+            <br>
+          </div>
             <div class="wrapper">
                 
-              <h1>Demo Screencaps</h1>
-              <p> There were still a few missing pieces (namely photos and text descriptions) and details to fix in our app at the end of the internship. </p>
             
     
                 <div id="videos">
@@ -289,6 +331,12 @@
       <section>
         <div class="project-wrapper">
           <h1> Takeaways</h1>
+          <h6>Knowing when to cut corners</h6>
+          <p>In 10 weeks, there wasn't the luxury of progressing cleanly through the UX process like I had seen in books, online articles, and Medium posts. When we were short on time, I applied modified, shortened versions of processes that would deliver just enough value to use. Other times, especially with our lack of user testing, I learned about the drawbacks of not going for the full push and how to compromise. </p>
+          <h6> Empathy for users AND teammates</h6>
+          <p> Teamwork makes the [UX] dream work! In order to convince my teammates that design was important, I had to step in their shoes. "How could supporting this 'design thing' help them acheive their own goals and ultimately benefit our team's work as a whole?" </p>
+          <h6> Parlez-vous 'business'?</h6>
+          <p>Since we were designing a new product, business value was key. The current app does not directly support revenue-generation, and this is a hurdle in terms of bringing our app to long-term/widespread production. If I were to do this again, I would consider business, user needs, and technical constraints together at the same time to understand the ways they intersected and how that would translate to a design. </p>
         </div>
 
 

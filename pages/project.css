@@ -11,6 +11,30 @@ nav{
     z-index: 999;
 }
 
+.sideNav{
+    width: 100px;
+    position: fixed;
+    top: 30%;
+    left: 10%;
+    z-index: 999;
+    color: var(--light-grey)
+}
+
+.sideNav ul{
+    list-style-type: none;
+}
+
+.sideNav li{
+    
+    padding: 0;
+    padding-left: 10px;
+    margin: 10px;
+}
+
+.sideNav li.current{
+    border-left: solid 4px var(--light-grey);
+
+}
 .hero{
     height: 600px;
     background:linear-gradient(180deg, rgba(231,240,255,1) 35%, rgba(217,227,242,1) 100%);
@@ -36,6 +60,7 @@ nav{
     font-size: 1.4em;
     max-width: 50%;
 }
+
 .project-wrapper{
     max-width: 700px;
     margin-left: auto;

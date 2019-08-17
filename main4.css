@@ -9,6 +9,7 @@ body{
   font-family: 'Open Sans', sans-serif;
   color: hsl(0, 0%, 21%);
   font-size: 1.2em;
+  font-weight: 300;
 
   -moz-user-select: none;
    -khtml-user-select: none;
@@ -205,4 +206,7 @@ footer div i:hover{
   opacity: 0.5;
 }
 
+#emailButton{
+  border: none;
+}
 /* ANIMATIONS */
