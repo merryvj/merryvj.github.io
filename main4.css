@@ -3,11 +3,16 @@
   --turquoise-light: hsla(171, 100%, 41%,0.15);
   --dark-grey: hsl(0, 0%, 21%);
   --light-grey: hsl(0, 0%, 71%);
+  --project-h6: hsl(216, 90%, 62%);
+  --green: rgba(130, 237, 198,100%);
+  --green-light: rgba(130, 237, 198,50%);
+
 }
 
 body{
+
   font-family: 'Open Sans', sans-serif;
-  color: hsl(0, 0%, 21%);
+  color: hsl(0, 0%, 28%);
   font-size: 1.2em;
   font-weight: 300;
 
@@ -15,6 +20,10 @@ body{
    -khtml-user-select: none;
    -webkit-user-select: none;
 
+}
+
+mark{
+  color: var(--green-light);
 }
 
 a{
@@ -61,7 +70,7 @@ a:hover{
   font-size: 1.2em;
   font-weight: 600;
   margin: 0;
-  
+
 }
 
 .card h2{
@@ -147,7 +156,7 @@ a:hover{
 
 .smallProjectImage:hover .imgOverlay{
   opacity: 0.9;
-  
+
 }
 
 .smallProjectImage span{
