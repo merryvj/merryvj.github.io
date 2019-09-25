@@ -6,6 +6,8 @@ section{
     margin-bottom: 3vh;
 }
 
+
+
 .designWrapper{
     max-width: 60vw;
     margin-left: auto;
@@ -26,7 +28,12 @@ img{
 }
 
 .hero{
-    background:linear-gradient(0deg,#f2f2f2 35%, #fcfcfc 100%) !important;
+  height: 200px !important;
+  background: linear-gradient(#fdfaff 40%, #fff 100%) !important;
+}
+
+.hero h1{
+  border-left: solid 6px #a536e0;
 }
 
 #logosGrid img{
@@ -47,11 +54,10 @@ img{
 
 #vector{
     display: grid;
-    grid-template-columns: 370px auto;
+    grid-template-columns: 1fr 2fr;
     grid-gap: 20px;
 }
 
 #vector img:first-child{
     box-shadow: none;
 }
-
