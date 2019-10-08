@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Mary Jiang</title>
+    <link rel="stylesheet" href="../pages/project.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148603304-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-148603304-1');
+</script>
+
+
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+
+
+
+    <script src="../pages/project.js"></script>
+
+
+
+
+  </head>
+  <style>
+
+
+  </style>
+
+  <body>
+    <nav>
+        <a href="../index.html"><i class="fas fa-arrow-left fa-2x"></i></a>
+    </nav>
+
+
+
+    <section class="hero" style="height: 300px !important">
+      <div data-aos="fade-right"  data-aos-duration="600" data-aos-delay="200"class="wrapper" >
+        <h1 style="      border-left: solid 6px  #ffcc00 !important;">Cartoon Portrait Generator: Live from your face!</h1>
+        <span class="linkBttn" style="background: #ffcc00"> <a target="_blank" href="https://iss241final.herokuapp.com/">View project</a></span>
+      </div>
+    </section>
+
+    <section>
+      <div class="project-wrapper">
+        <h6>Fairly pointless. But here's what it does: </h6>
+        <ul>
+          <li> Webcam input of someone's face</li>
+          <li> Approximate their facial features into a mishmash of nose & eye doodles drawn by random strangers on the internet </li>
+          <li> Let someone download their masterpiece as an image </li>
+          <li> Perhaps they'll share it, frame it on their wall, update their social media profile pictures</li>
+
+        </ul>
+        <br>
+
+        <video controls style=" box-shadow: 0 2px 8px 1px rgba(0,0,0,0.1)"width=100% src="CartoonGenDemo.mp4"></video>
+        <p align="center"> <i> Mildly horrifying, isn't it? </i> </p>
+
+        <h6> My first real fun with web development </h6>
+        <p> I took <strong> ISS241: Web Project Design and Development </strong> in Spring 2019 and created this for my final project. I used NodeJS, Express.js, p5.js, plain old Javascript, and HTML/CSS. I also used a <a target="_blank" href="https://github.com/auduno/clmtrackr">face-tracking API</a> and Google's Quick Draw <a href="https://quickdraw.withgoogle.com/data" target="_blank"> dataset.</a> Because there was so much data from the Quick Draw dataset, I used Firebase to manage it. </p>
+
+        <h6>But why build this?</h6>
+        <p>Our final project was extremely open-ended. We were encouraged to use p5, a Javascript grapic library, to create an interactive experience.</p>
+        <p>As I was exploring ideas, I stumbled across Quick, Draw and immediately spent the rest of class playing with it.</p>
+        <img width=100% src="iss241/QuickDraw.png">
+        <br><br>
+        <p> I was inspired by projects people had built using the data: machine learning models, <a href="http://xinyue.de/scribbling-speech.html" target="_blank">generating story scenes from spoken sentences</a>, and even a smart "camera" that recognized objects in photos and turned them into a <a href="https://danmacnish.com/2018/07/01/draw-this/" target="_blank"> cartoon!</a> So cool. So many possibilities. And if I could use Tensorflow? Woah!</p>
+
+        <p> But with a creeping deadline, I decided to build something more manageable. I remember playing with photo-to-portrait tools as a kid – could I make something similar? But of course, the portraits in my project would be much more abstract. A weird form of "art", perhaps?   </p>
+        <h6> The technical challenges </h6>
+        <p>I had no idea how to get the raw, vector Quick Draw data working with p5. It took an immense amount of Googling and looking at the code of other remotely related projects to get a sense of where to begin–or if it would work at all.</p>
+        <p> The server stuff! The data! No more nice little static HTML pages. Figuring out how to set up a database to host all the vector drawing data, retrieve information from said database, and then updating it all live in my app. </p>
+        <p> Generated faces ended up being...scarier...than I expected. Since I could only use nose and eye drawings from Quick Draw, for rendering the rest of the facial features (mouth, lips, eyebrows, face shape), I had to work with the face tracking API to write something to approximate those facial features from scratch.</p>
+
+        <h6>This kick-started my journey to learning how to <i> build </i> things </h6>
+        <p> It's a whole new world out there! I want to keep playing around with web development to see what's possible – I just want to learn how to create cool (and hopefully useful) things. Knowing full-stack development is so powerful. My next steps are to learn more about the back-end, but also more front-end frameworks like React or Vue.</p>
+
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+  </body>
+</html>

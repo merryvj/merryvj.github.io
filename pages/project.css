@@ -213,7 +213,7 @@ img{
 
 }
 
-#videos video{
+#videos video, .demo-gif{
     max-width: 100%;
     box-shadow: 0 2px 8px 1px rgba(0,0,0,0.15);
     transition: 0.2s ease-out;
@@ -226,4 +226,33 @@ img{
 #videos video:hover{
     transform: scale(1.7);
     transition-delay: 0.6s;
+}
+
+.two-col{
+  display: flex;
+}
+
+.demo-text{
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+
+.linkBttn{
+  padding: 3px 15px;
+  border-radius: 5px;
+
+
+}
+
+.linkBttn a{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 0.8em;
+}
+
+.shadowImg{
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.10)
+
 }
