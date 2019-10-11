@@ -254,5 +254,11 @@ img{
 
 .shadowImg{
   box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.10)
+}
 
+.quote{
+  border-left: solid 3px var(--light-grey);
+  color: var(--light-grey);
+  padding-left: 20px;
+  font-weight: 600;
 }

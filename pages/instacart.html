@@ -41,7 +41,7 @@
 
     <section class="hero">
       <div data-aos="fade-right"  data-aos-duration="600" data-aos-delay="200"class="wrapper" >
-        <h1>Redesigning Instacart's Shopper App Experience</h1>
+        <h1 style="border-left: solid 6px  #0CAC0A !important;"">Redesigning Instacart's Shopper App Experience</h1>
         <p> <strong>Timeframe: </strong> 2 weeks </p>
         <p> <strong> Skills: </strong>UX design </p>
         <p> <strong>Tools: </strong> Figma, Principle </p>
@@ -49,23 +49,38 @@
     </section>
 
     <section id="overview">
-      <div class="project-wrapper"  data-aos="fade-up"  data-aos-duration="600" data-aos-delay="200">
+      <div class="project-wrapper">
         <p><strong> Disclaimer: </strong> I am not employed by nor affiliated with Instacart in any way. This project is part of a redesign challenge for my KP fellows application. </p>
-
 
       </div>
 
 
+
       <div class="project-wrapper">
+        <img width=100% src="InstacartImages/screenshot.png">
+        <h6>Flexibility. Freedom. Fun. This is what draws shoppers to work for Instacart.</h6>
+        <p>Shopping for Instacart is as much of an experience for the shopper as it is for the customer getting groceries delivered to their doorstep. It's in the best interests of everyone (Instacart and their customers alike) for shoppers to do their job well – and feel good doing so. </p>
+        <h6> A well-designed shopper experience is crucial. </h6>
+        <p> Living alone without a vehicle during the summer, I was overjoyed to discover a service like Instacart. I looked forward to getting my grocieres delivered each week by smiling shoppers who donned carrot-print lanyards. </p>
+        <p>Everything was awesome until one week, when I pulled an evil-customer-move and put in an adventurous order from Aldi. Speciality Aldi goodies galore. Organic dried mangos. Jalapenos in a jar. I watched the app as my shopper picked my order – it took a while! She had trouble finding several items and ended up selecting multiple replacement items. She was apologetic as she made the delivery: "I'm new and just couldn't figure out the store today."</p>
+        <p> How can Instacart help shoppers breeze through these inevitable roadbumps? While Instacart has an in-person, in-store prescence for training and supervising shoppers, the majority of the shopper experience hinges on the shopper app. How might we design this app to best support shoppers? </p>
+
+        <h6> Understanding shopper pain-points </h6>
+        <p> To gain insight on what the shopper experience looks like, I went searching online and found a subreddit and a Discord chatroom for Instacart shoppers. I made posts asking questions and chatted individually with two shoppers. </p>
+        <p>I gathered my observations on post-it notes and organized them into categories to see which aspects of the shopping experience I could focus on in my redesign. </p>
+        <img width=100% src="InstacartImages/affinity.jpg">
+        <p align=center> <i>Blue for pain-points, yellow for actions shoppers take in response </i> </p>
+
         <h6> So, who are we solving for? </h6>
-        <p> As a read more about Shoppers on Instacart's blog and chatted with two of them online, it was clear that shoppers are extremely diverse. However, shoppers with different skills and experience experienced Instacart shopping quite differently. </p>
+        <p> Taking what I had seen online and read from shopper interviews on Instacart's blog, it was clear that shoppers with different skills and experience experienced Instacart shopping quite differently. </p>
+
       </div>
       <div class="wrapper">
         <img width=100% src="InstacartImages/UserCases.png">
       </div>
       <div class="project-wrapper">
         <p> Instacart assumes shoppers are like <strong> Fiona</strong>. Yet from looking at Instacart's shopper <a target="_blank" href="https://medium.com/shopper-news/shopper-perks-52e480f2788a"> stats</a>, it seems that most shoppers are either newbies or just getting rolling. Helping these people emulate the behaviors of seasoned shoppers can help ensure shopper performance quality and customer satisfaction.</p>
-        <p> But no matter how seasoned a shopper is, everyone wants to be better: more accurate and faster.  </p>
+        <p> Looking at shopper pain-points again, they can also be grouped to be associated with each level of shopper:
       </div>
       <div class="wrapper">
         <img width=100% src="InstacartImages/UserPains.png">
@@ -73,24 +88,51 @@
 
 
       <div class="project-wrapper">
-        <h6> Pain-point #1: Planning a route through the store</h6>
+        <h6> Opportunity #1: Planning a route through the store</h6>
         <p> Currently, the Shopper App sorts items by a supposed "fastest route". However, many shoppers online have cautioned on trusting this, especially since store layouts change and items may appear in categories that don't correspond with the store layout.</p>
+        <p>This is also an engineering limitation. It's not realize for the Instacart app to be optmized for every store's layout. </p>
         <p>
           When I posted a thread asking about the ease of use of the Shopper app, I recieved these reponses:</p>
-          <h3> "Review the entire list to keep the stragglers in mind when shopping to minimize backtracking. And keep an eye out for randomly placed items."</h3>
+          <h3 class="quote"> <i> "Review the entire list to keep the stragglers in mind when shopping to minimize backtracking. And keep an eye out for randomly placed items." </i></h3>
           <br>
         <img width=100% src="InstacartImages/RedditScreenShot.png">
 
         <p> The "cow-path" that shoppers take is to scroll through everything and memorize items before they shop and keep scrolling through the list again while they shop.
 
         <img width=100% src="InstacartImages/CurrentList.png">
+        <p> It's easy when there are only a few items to keep track of, but what about orders with many items? I remember learning in my cognitive psych. class that adults can only keep 5 to 9 items in their short term memory. So if most orders have dozens of items, shoppers must repeatedly check back through their list to plan which items to find next. </p>
+        <p> Furthermore, shoppers often scroll through all the items when they are in a certain area of the store to see if anything else in the list is nearby. The more options to search through, the longer it takes to find what they are looking for.  </p>
+        <p> I'd read an Interaction Design Foundation article about designing lists and remembered seeing this:</p>
+        <img width=100% src="InstacartImages/idfscreenshot.png">
+        <p align=center> <i> Source: <a target="_blank" href="https://www.interaction-design.org/literature/article/search-for-items-with-scrolling-lists-archive-lists-or-list-inlays"> www.interaction-design.org </a></i></p>
+        <p> What if there was a way for shoppers to see other items, or all the other items at a glance, while shopping for one category?</p>
+        </div>
+        <div class="wrapper">
+          <img width=100% src="InstacartImages/CondensedCategories.png">
+
+          </div>
+        <div class="project-wrapper">
+        <p> Instacart's current design allows for 3 items to be shown on each page. This is fine for shopping one item at a time, however the way the item information is presented could be more designed.</p>
+        <p> <strong> So what's the most important information that shoppers need for selecting the right items? </strong></p>
+        <h3 class="quote"> <i> "I identify items using the picture most of the time...but I usually check the size to get too. Sometimes I like to double-check the price of an item just in case it doesn't match." </i></h3>
+
+        <img width=100% src="InstacartImages/ItemInList.png">
+        <p align=center> <i> Another consideration is that more space allows for line-heights that can accomodate long item names. Additionally, people may have accessibily options that make the text size bigger. </i> </p>
 
 
+
+      </div>
+      <div class="project-wrapper">
+        <h6> Opportunity #2: Scanning items is inefficient</h6>
+        <p> For each item shopped, Instacart requires shoppers either: <br>
+          &nbsp; - Scan the item barcode <strong> OR </strong> <br>
+          &nbsp; - Take a picture of the item (if no barcode/cannot be scanned)
+        </p>
+        <p> Shoppers must tap on an item from the list, then tap a 'Found Item' button in the additional screen just to access the scanner.
       </div>
 
       <div class="wrapper">
         <img width=100% src="InstacartImages/QuickScanComparison.png">
-        <img width=100% src="InstacartImages/CondensedCategories.png">
       </div>
 
     </section>
