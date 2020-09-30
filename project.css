@@ -49,9 +49,13 @@ h4{
 
 }
 
+ul li {
+    margin-bottom: 1em;
+}
 .caption{
     opacity: 0.6;
     text-align: center;
+    margin-bottom: 2em;
 
 }
 
@@ -105,4 +109,13 @@ h4{
 }
   .border{
       border: solid 1px #bdbdbd;
+  }
+
+  a{
+      text-decoration: underline !important;
+      transition: 0.2s;
+  }
+
+  a:hover{
+      opacity: 0.5;
   }
