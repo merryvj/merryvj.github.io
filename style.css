@@ -58,7 +58,7 @@ h3{
     color: var(--dark);
 }
 
-.section:nth-child(1), .section:nth-child(6){
+.section:nth-child(1), .section:nth-child(5){
     background: var(--dark);
     color:#FFFFFF !important;
     min-width: 800px !important;
@@ -78,6 +78,8 @@ h3{
     background: linear-gradient(148.83deg, #E0FAFC 0%, #A3F3E5 100%, #A3F3E5 100%);
 }
 
+/* 
+
 .section:nth-child(5){
     background: linear-gradient(328.83deg, #7BB9E6 0%, #D0EEFF 100%);
 }
@@ -85,7 +87,7 @@ h3{
 
 .section:nth-last-child(1){
     background: linear-gradient(328.83deg, #AA88E1 0%, #F5C5FD 100%);
-}
+} */
 
 
 
