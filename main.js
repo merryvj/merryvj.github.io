@@ -18,5 +18,5 @@
 });
 
 $(document).ready(function() {
-    $('.wrapper').hScroll(60); // You can pass (optionally) scrolling amount
+    $('.wrapper').hScroll(40); // You can pass (optionally) scrolling amount
 });
