@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root{
+    --dark: rgb(6, 6, 29);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.h-scroller{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark);
+}
+
+html{
+    height: 100%;
+    overflow-y: hidden;
+}
+
+h1{
+    font-size: 48px;
+    line-height: 72px;
+}
+
+h3{
+    opacity: 0.5;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0px 20px;
+}
+
+.wrapper{
+    min-width: 100%;
+    min-height: 900px;
+    overflow-x: auto;
+    display: flex;
+    padding: 100vh;
+}
+
+.wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+.section{
+    min-width: 650px;
+    max-width: 650px;
+    margin: 8px;
+    color: var(--dark);
+}
+
+.section:nth-child(1), .section:nth-child(6){
+    background: var(--dark);
+    color:#FFFFFF !important;
+    min-width: 800px !important;
+}
+
+.section:nth-child(2){
+    background: linear-gradient(328.78deg, #757F9A -0.68%, #D7DDE8 100%);
+}
+
+.section:nth-child(3){
+    background: linear-gradient(328.83deg, #FF8D8D 0%, #FFDCDC 100%);
+}
+
+.section:nth-child(4){
+    background: linear-gradient(148.83deg, #E0FAFC 0%, #A3F3E5 100%, #A3F3E5 100%);
+}
+
+.section:nth-child(5){
+    background: linear-gradient(328.83deg, #7BB9E6 0%, #D0EEFF 100%);
+}
+
+
+.section:nth-last-child(1){
+    background: linear-gradient(328.83deg, #AA88E1 0%, #F5C5FD 100%);
+}
+
+
+
+.section-content{
+    margin: 160px 80px;
+}
+
+
+.section-desc{
+    font-size: 18px;
+    line-height: 27px;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none; 
+  color: inherit;
+}
+
+.section-links{
+    margin-top: 24px;
+}
+
+.project-link > a{
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: opacity 0.2s ease;
+}
+
+.project-link > a:hover{
+    opacity: 0.5;
+
+}
+
+.project-link{
+    margin-right: 16px;
+}
+
+/* .section:hover .section-img{
+    opacity: 0.25;
+}
+
+.section-img{
+    margin-top: 48px;
+    mix-blend-mode: multiply;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+
+.section-img > img{
+    width: 100%;
+} */
+
+.header{
+    position: fixed;
+    height: 10vh;
+    width: 100%;
+    background-color: white;
+}
+
+.row{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    white-space: nowrap;
+
+}
+
+.col{
+    display: inline-block;
+    width: 800px;
+    height: 100%;
+}

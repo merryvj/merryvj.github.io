@@ -1,0 +1,292 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Mary Jiang</title>
+  <link rel="stylesheet" href="project.css">
+  <script src="main.js"></script>
+
+</head>
+
+<body>
+    <section class="overview project-wrapper">
+       <div class="col-12">
+        <div class="overview-details">
+            Summer 2020 internship (12 weeks) • Web-based interaction design
+        </div>
+
+        <h1>
+            Designing the Red Hat Integration Service Registry, an iPaas product
+        </h1>
+
+       </div>
+    </section>
+
+    <section class="project-wrapper">
+
+      <div class="row">
+        <h3> Overview </h3>
+
+          <div class="col-12">
+
+            <p> During Summer 2020, I [remotely] joined Red Hat's UXD organization as an interaction design intern with the App Services team. Here I'll share my process and learnings from working on the Service Registry, an enterprise web application part of Red Hat's Integration suite of middleware products. Red Hat is an open source company – no NDAs on this project!
+
+            </p>
+
+            <div class="img-holder">
+                <img src="redhat/team.png">
+                <p class="caption"><i>I was mentored by my manager and 3 other designers. Service Registry = a project in its infancy (...and also my design baby for the summer)</i></p>
+            </div>
+            <br>
+            <p>
+                As the sole designer on this project, I conducted the UX design process from discovery to delivering high-fidelity wireframes and prototypes. I worked closely with an engineer, product manager, and user researcher. 
+            </p>
+
+
+            <!-- <ul>
+                <li>
+                    Deliverables: competitive analysis deck, information architecture design, wireframes and prototypes for multiple key workflows
+                </li>
+                <li>
+                    Led meetings to gather requirements and feedback from engineering and product management stakeholders
+                </li>
+                <li>
+                    Presented my work at team-wide meetings and at weekly design review sessions
+                </li>
+                <li>
+                    Created a usability testing plan to test workflows and interaction patterns
+                </li>
+            </ul> -->
+
+
+          </div>
+      </row>
+    </section>
+
+    <hr class="solid">
+
+    <section class="project-wrapper">
+        <h3> Background </h3>
+        <div class="row">
+            <div class="col-12">
+                <h2> The Red Hat Service Registry is a datastore for developer teams to manage evolving versions of "artifacts"</h2>
+                <p> Artifacts can be 2 things: schemas or API designs. These tell developers what the data format being sent and recieved by their applications looks like. As development continues, data needs change. Teams then need a way to keep track of these changes so that they don't write code based on outdated data formats. </p>
+                <p> Artifacts have: </p>
+                <ul>
+                    <li> <b> Unlimited versions </b>with multiple versions that can be active at the same time </li>
+                    <li> <b> Changing metadata </b> (name, description, labels) that updates with each new version </li>
+                    <li> <b> Configurable "rules"</b> that control how compatbile new versions are with old ones</li>
+                    <li> <b> External documentation</b>, but only if the artifact is an API design </li>
+                
+                </ul>
+                <br>
+                <div class="img-holder">
+                    <img src="redhat/ibmschemas.png">
+                    <p class="caption"> <i>Source: IBM </i></p>
+                </div>
+                <br>
+                <h2>It can be used without a UI. But it's nicer with one. It's about to become an important product, so let's get some design magic! </h2>
+            <p>
+                Red Hat had already released an MVP "Tech-Preview" version of the Service Registry, with a basic UI created by engineers. My goal was to be the first light of UX this project had ever seen, creating designs that could be used as frameworks for future iterations of the product.
+            </p>
+            </div>
+        </div>
+    </section>
+
+    <hr class="solid">
+
+
+    <section class="project-wrapper">
+        <h3> Design </h3>
+
+        <div class="row">
+            <div class="col-12">
+                <h2> Artifact details page </h2>
+                <p> This is where a user can view and manage versions of an artifact. It needs to support numerous use cases of uploading a new artifact version, editing metadata, comparing content & documentation between versions, updating artifact rules, and managing state (e.g. "deprecating" a version). </p>
+                
+                <p> The existing UI in the Tech Preview had several problems: </p>
+                <br>
+
+                <div class="img-holder">
+                    <img src="redhat/existingdesign.png">
+                </div>
+
+            </div>
+ 
+        </div>
+    </section>
+
+        
+    <section class="project-hero-img">
+        <img src="redhat/annotateddetails.png">
+        <p class="caption"> <i> Latest iteration of my proposed design </i></p>
+    </section>
+
+
+    <section class="project-wrapper">
+        <div class="row">
+            <div class="col-12">
+                <div class="img-holder shadow-sm">
+                    <img src="redhat/artifactdetails_iterations.gif">
+                </div>
+                <p class="caption"> <i> Series of iterations based on stakeholder feedback </i> </p>
+            </div>
+            <br><br>
+        </div>
+        
+    </section>
+
+    <section class="project-wrapper">
+        <div class="row">
+            <div class="col-6">
+                <div class="img-holder shadow-sm">
+                    <img src="redhat/deprecation.png">
+                </div>
+                <p class="caption"> <i> Inline-warning for a deprecated version </i> </p>
+    
+            </div>
+            <div class="col-6">
+                <div class="img-holder shadow-sm">
+                    <img src="redhat/deletion.png">
+                </div>
+                <p class="caption"> <i> Deleting an artifact – pretty destructive </i> </p>
+    
+    
+            </div>
+        </div>
+    </section>
+
+    
+
+
+    <hr class="solid">
+
+    <section class="project-wrapper">
+      
+        <div class="row">
+            <div class="col-12">
+                <h2> Browse all artifacts </h2>
+                <p> How might we allow users to distinguish between different types of artifacts? </p>
+                <p> Knowing exactly which artifact to search for VS. vaguely hunting? </p>
+                <p> What type of table/list configuration do screen readers handle the best? </p>            
+
+                <div class="img-holder shadow-sm">
+                    <img src="redhat/artifactlist.gif">
+                </div>
+                <p class="caption"> <i> Previewing artifact details with a drawer  </i> </p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <p> <b> Why a preview drawer over an expandable table item? </b></p>
+            </div>
+            <div class="col-8">
+                <p>While the drawer is too narrow to show previews of artifact content, it is much easier to tab through & compare items to see if they match what is being looked for. Additionally, the preview drawer pattern would be consistent with another closely related Red Hat Integration product. 
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-12">
+                <div class="img-holder shadow-sm">
+                    <img src="redhat/listexplorations.png">
+                </div>
+                <p class="caption"> <i> Explorations for table / list items  </i> </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <p> <b> Table headers or just a list item? Responsiveness? </b></p>
+            </div>
+            <div class="col-8">
+                <p> Options with sortable table headers are desirable for sorting on multiple dimensions (otherwise would have to fit it into the filter toolbar) and even for screen readers. I also asked developers and found that not all of the explorations were technically feasible with the Patternfly design system. </p>
+                <p> Responsiveness was not a big consideration since this product would not be used on mobile devices. I still did consider screen width and resizing behavior with an open preview drawer. </p>
+
+            </div>
+        </div>
+    
+    </section>
+
+  
+
+
+    <hr class="solid">
+
+
+    <section class="project-wrapper">
+        <div class="row">
+            <div class="col-3">
+                <h2> Create new artifact </h2>
+            </div>
+            <div class="col-9">
+                <div class="img-holder shadow-sm">
+                    <img src="redhat/createartifact.gif">
+                </div>
+                <p class="caption"> <i> sjdflksdfldsljf </i> </p>
+
+    
+            </div>
+        </div>
+    </section>
+
+    <hr class="solid">
+
+    <section class="project-wrapper">
+        <h3> Process </h3>
+
+        <div class="row">
+            <div class="col-6">
+                <h4> Competitive analysis </h4>
+                <p> Blakskdsjfksdjfdksfj </p>
+            </div>
+
+            <div class="col-6">
+                <h4> Competitive analysis </h4>
+                <p> Blakskdsjfksdjfdksfj </p>
+            </div>
+ 
+        </div>
+
+
+    </section>
+
+    <section class="project-wrapper">
+        <div class="row">
+            <div class="col-12">
+                <h4> Information architecture </h4>
+                <div class="img-holder">
+                    <img src="redhat/IA.png">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <h4> Ideating & sharing at low-fidelity </h4>
+                <div class="img-holder">
+                    <img src="redhat/lowfiprezo.gif">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <hr class="solid">
+
+    <section class="project-wrapper">
+        <h3> Challenges and learnings </h3>
+        <div class="row">
+            <div class="col-12 img-holder">
+                <img src="redhat/process.png">
+            </div>
+            <p class="caption"> <i> BTW, Eric = Lead engineer and main stakeholder :-) </i> </p>
+
+        </div>
+    </section>
+   
+
+</body>
+</html>
