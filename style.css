@@ -31,8 +31,11 @@ h3{
 }
 
 .section:nth-child(1){
-    margin: 10vh 0;
+    margin-top: 10vh;
+}
 
+.section:last-child{
+    margin-bottom: 10vh;
 }
 
 /* 
@@ -183,4 +186,9 @@ a:active {
       padding: 2px;
       background: #F4C63A;
       color: var(--dark);
+  }
+
+  .light-div{
+      color: white;
+      margin: 60px 0;
   }
