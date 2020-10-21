@@ -27,6 +27,7 @@ body{
     padding: 0;
     display: inline-block !important;
     background-color: white !important;
+    color: black !important;
 }
 section{
     margin-bottom: 60px;
