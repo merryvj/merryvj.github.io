@@ -11,7 +11,7 @@ body{
 }
 
 html{
-    
+    overflow-x: hidden;
 }
 
 h1{
@@ -23,7 +23,7 @@ h3{
     opacity: 0.5;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding: 0px 20px;
+    padding: 0px;
 }
 
 .section{
