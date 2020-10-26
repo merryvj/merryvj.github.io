@@ -9,10 +9,6 @@
     margin: 80px;
   }
 
-h2{
-    font-weight: normal;
-    margin: 0;
-}
   
 html{
     height: 100%;
@@ -27,7 +23,7 @@ body{
     padding: 0;
     display: inline-block !important;
     background-color: white !important;
-    color: black !important;
+    color: #080D1D;
 }
 section{
     margin-bottom: 60px;
@@ -44,15 +40,27 @@ h1{
     line-height: 48px;
 }
 
-h4{
-    font-size: 20px;
-    font-weight: bold;
 
+h2{
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 42px;
 }
+
+h3{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0px;
+    font-size: 16px;
+    color: #3553B4 !important;
+}
+
 
 ul li {
     margin-bottom: 1em;
 }
+
+
 .caption{
     opacity: 0.6;
     text-align: center;
