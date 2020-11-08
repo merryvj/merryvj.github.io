@@ -5,6 +5,27 @@
     --medium-blue: #4361C3;
 }
 
+
+nav {
+    margin: 64px 72px;
+    font-size: 22px;
+    font-weight: 400;
+    color: inherit;
+}
+
+nav > a:not(:first-child){
+    float: right;
+    margin-left: 32px;
+}
+
+nav > .inactive{
+    opacity: 0.6;
+    transition: 0.2s ease;
+}
+
+nav > .inactive:hover{
+    opacity: 1;
+}
 body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--dark);
