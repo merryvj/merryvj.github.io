@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');:root{
-    --dark: #080D1D;
-    --light-blue: #D1D8EF;
+    --dark: #001C46;
+    --darkest: #080D1D;
+    --light-blue: #F4FAFF;
     --medium-blue: #4361C3;
 }
 
@@ -28,8 +29,8 @@ nav > .inactive:hover{
 }
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: var(--dark);
-    color: var(--light-blue);
+    background-color: var(--light-blue);
+    color: var(--dark);
     width: 100%;
     height: 100%;
     margin: 0;
@@ -118,7 +119,7 @@ h2{
 
 
 .section-desc{
-    opacity: 0.75;
+    opacity: 0.85;
     font-size: 18px;
     line-height: 27px;
 }
@@ -137,13 +138,15 @@ a:active {
 
 .project-link > a{
     padding: 8px 16px;
-    background-color: rgba(246, 246, 246, 0.05);
+    background-color:rgba(0, 28, 70, 0.04);
     border-radius: 8px;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: background-color 0.2s ease;
     transition: opacity 0.2s ease;
+    display: inline-block;
+    margin-bottom: 8px;
 
 }
 

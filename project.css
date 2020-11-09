@@ -134,7 +134,7 @@ ul li {
   }
 
   .dark {
-      background-color: var(--dark) !important;
+      background-color: var(--darkest) !important;
       color: rgba(255, 255, 255, 0.75) !important;
       padding-top: 60px;
       padding-bottom: 30px;
