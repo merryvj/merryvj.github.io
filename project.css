@@ -144,3 +144,9 @@ ul li {
   .dark > strong, .dark h2 {
       color:#FFF !important;
   }
+
+  .grey-bg{
+      background-color: #f5f5f5;
+      padding-top: 60px;
+      padding-bottom: 30px;
+  }
