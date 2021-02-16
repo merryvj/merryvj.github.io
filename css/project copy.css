@@ -1,0 +1,115 @@
+@import "main copy.css";
+
+
+hr.solid{
+  opacity: 0.2;
+}
+
+
+.header {
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.header > :first-child{
+    width: 60%;
+    margin-right: 6rem;
+}
+
+.context{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 4em;
+    margin-top: 8rem;
+    margin-bottom: 4em;
+
+}
+.row{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 6rem;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.row:first-of-type{
+    margin-top: 2rem;
+}
+
+p, ul, ol, blockquote{
+    font-size: 1.4em;
+    line-height: 160%;
+    margin-bottom: 2em ;
+}
+
+ul > li, ol > li{
+    margin-top: 1em ;
+    margin-bottom: 1em ;
+    margin-left:1.5em;
+    padding-left: 0.5em;
+}
+
+figure{
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+    margin-top: 4em;
+    margin-bottom: 4em;
+
+    
+
+}
+
+
+figure > img{
+    width: 100%;
+
+}
+
+.half-size > img{
+    width: 40%;
+
+}
+
+
+figcaption{
+    line-height: 160%;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.5;
+    margin-top: 1em;
+}
+
+blockquote{
+    margin-left: 2rem ;
+    margin-right: 2rem ;
+    line-height: 140%;
+}
+
+footer {
+    display: block;
+    padding: 1em 2rem;
+    background: #f8f8f8;
+    box-sizing: border-box;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right:0;
+}
+
+footer > a {
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+footer > a:hover{
+    opacity: 1;
+}
+
+footer > a:last-child{
+    float: right;
+}

@@ -1,0 +1,493 @@
+<html lang="en">
+
+<head>
+    <!-- Google Analytics -->
+    <script>(function (i, s, o, g, r, a, m) { i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o), m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m) })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga'); ga('create', 'UA-148603304-1', 'auto'); ga('send', 'pageview');</script>
+    <!-- End Google Analytics -->
+
+    <meta charset="utf-8">
+    <title>Mary Jiang – Red Hat</title>
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="../css/project.css">
+
+
+    <!--Javascript-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- <script src="../main.js"></script> -->
+
+
+
+</head>
+
+<body>
+
+   
+    <div class="wrapper">
+        <nav>
+            <div class="left">
+                <a href="../index.html"> </a>
+            </div>
+
+            <div class="right">
+                <a href="../index.html"> Work</a>
+                <a href="../about.html"> About</a>
+                <a target="_blank"
+                    href="https://drive.google.com/file/d/107mHMDsfwN24cfR40ZmhZb9rAMw5EeWN/view?usp=sharing">
+                    Resume</a>
+
+
+            </div>
+        </nav>
+        
+        <div style="padding-top: 10em">
+            <h1> <a target="_blank" href="https://www.redhat.com/en" class="lined">Red Hat</a> is the world's leading
+                provider of open source enterprise software. The Integration Service Registry helps developer teams work
+                together more efficiently. As an interaction design intern – and the first designer on the product – my
+                challenge was to establish core interaction patterns that could scale to accomodate future releases.
+            </h1>
+            <div class="context">
+                <div>
+                    <h4>
+                        Timeframe
+                    </h4>
+                    <p> Summer 2020, 8 weeks</p>
+
+                </div>
+                <div>
+                    <h4>
+                        Role
+                    </h4>
+                    <p> Information Architecture, UX design </p>
+
+                </div>
+                <div>
+                    <h4>
+                        Tools
+                    </h4>
+                    <p> Sketch, Marvel, Patternfly design system </p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <figure>
+        <img src="../images/projects/redhat/BeforeAfter.jpg">
+    </figure>
+
+
+    <div class="wrapper">
+
+
+
+        <!-- 
+        <div class="row">
+
+
+            
+            <div>
+                <h2> THE WHY </h2>
+            </div>
+
+            <div>
+                <h3> As a developer for [a big ol' multinational], I want to efficiently <strong> manage and discover data
+                    designs </strong> so that my team and I can focus on building quality* applications. </h3>
+                    <p> *Stable, secure, sexy???</p>
+                </h3>
+            </div>
+        </div>
+
+       -->
+        <div class="row">
+
+
+
+            <div>
+                <h2> Motivation </h2>
+            </div>
+
+            <div>
+                <h3> It's originally used without a GUI. It's getting more features so we need a one now. An engineer
+                    designed a UI for the MVP...
+                </h3>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div>
+                <h2> What is it? </h2>
+            </div>
+
+            <div>
+                <h3> "A datastore for artifacts: schemas and API designs"</h3>
+
+                <p> Imagine you're a developer for PetCorp, and your team is working on a new adoption
+                    website. To get the data that is displayed about the pets on the site, developers make calls to the Petstore API. Suddenly, management barges in with a new requirement: they want the site to show the personality of each pet! Joey, another developer, makes the changes to the design of the API and updates the database's "Pet" schema: </p>
+
+
+                <p> </p>
+
+                    <figure>
+                        <img src="../images/projects/redhat/schema.png">
+                    </figure>
+    
+
+                <p> This is where the Service Registry comes in. Now, developers can store all the data designs (APIs,
+                    database schemas) and update them as they evolve, so that everyone on the development team can
+                    access them. Once integrated with the development environment, the Service Registry also ensures the
+                    data being sent and recieved by the application is "up-to-date". </p>
+
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div>
+                <h2> Constraints </h2>
+            </div>
+
+            <div>
+
+                <h3> Backwards compatibility </h3>
+                <p> No changes were to be made to the existing Service Registry backend that customers currently made
+                    use of. The new design had to be compatible with the way the existing backend was structured. This
+                    was unlike most other projects where the server-side engineering happens in tandem with, or slightly
+                    behind, design. </p>
+
+                <h3> Aligning with the design system </h3>
+                <p> Red Hat's UX organization was working on updating to the newly released Patternfly 4. The team
+                    working on the Integration suite of products was also working on standardizing conventions. So the
+                    design choices I made for the Service Registry needed to be as consistent with related products as
+                    possible, in addition to avoiding the design of new UI components.
+                </p>
+
+                <h3> No customers yet, no user research ¯\_(ツ)_/¯ </h3>
+                <p> Because this is a product type that is fairly new and not widely adopted, there weren't any specific
+                    insights from interviews with developers. Without a clear understanding of user goals and workflows,
+                    my work was informed mainly by functionality requirements gathered from engineering stakeholders.   </p>
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+        <div class="row">
+            <div>
+                <h2> Gaining confidence </h2>
+            </div>
+            <div>
+
+                <h3> Understanding the MVP's problems </h3>
+                <p> The MVP UI version of the Service Registry was not officially released, and there was no user
+                    feedback to build off of. So for better insights into the main usability issues and pain-points due
+                    to the design choices in the MVP, I – as a novice user – ran through a demo. </p>
+                <figure>
+                    <img src="../images/projects/redhat/detailspains.png">
+                </figure>
+
+
+                <h3> Understanding competitors </h3>
+
+                <p> Because my work began during the stage when the product features were still being defined, I had
+                    opportunity to advocate for features that would improve the UX. I presented an analysis to
+                    facilitate a conversation with product and engineering, which is when we determine the scope of my
+                    focus. </p>
+                <figure>
+                    <img src="../images/projects/redhat/companal.png">
+                    <figcaption> Key takeaways of the best and worst aspects of each competitior, which were discussed
+                        in product decision-making </figcaption>
+                </figure>
+
+                <h3> Understanding developers </h3>
+                <p> I familiarized myself with the interaction patterns of popular git tools, API management softwares,
+                    and other products in the Red Hat Integration suite. In order to design something that developers can easily pick up, it helps when I'm familiar with what they are already used to. </p>
+                <figure>
+                    <img src="../images/projects/redhat/devtools.png">
+                </figure>
+
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div>
+                <h2> set the scope </h2>
+            </div>
+            <div>
+                <h3> Establishing the foundation for future releases </h3>
+                <!-- <ul>
+                    <li>
+                        Discovering and referencing an artifact
+                    </li>
+                    <li>
+                        Updating an artifact
+                    </li>
+                    <li>
+                        Adding a new artifact
+                    </li>
+                </ul> -->
+
+                <p> At the end of the 3 weeks I spent on research, I had a clear idea of what tasks I would be designing
+                    for – but I didn't really understand the user goals behind those tasks. I also was designing just
+                    for the "Developer" persona, although the insights about them seemed too general to drive my
+                    decisions. For more insight into user goals, I wrote the following "user stories" (inspired by
+                    the job story approach): </p>
+
+                <ul>
+                    <li>
+                        When I need to find a data source, I want to find something relevant so that I can make
+                        use of it in the project I am working on.
+                    </li>
+
+                    <li>
+                        When an artifact needs updating, I want to get quickly to the place to make changes so that I do
+                        not
+                        waste time.
+                    </li>
+
+                    <li>When I am referencing an artifact, I want easy access to helpful resources so that I can speed
+                        up my development process. </li>
+                </ul>
+
+
+
+                <!-- 
+                <h3> Aligning with Patternfly 4</h3>
+                <p> I usually do not go into higher-fidelity pixel-pushing until after validaton with stakeholders. But because I was working with Red Hat's Patternfly design system, I started building with the components to make sure my design worked with the constraints of Patternfly.  </p> -->
+
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div>
+                <h2> Design Process </h2>
+            </div>
+            <div>
+                <h3> Realistic, scrappy, and iterative</h3>
+                <p> This ran like a client project, where the lead engineer was the main stakeholder with whom I
+                    validated most of the design decisions. Unfortunately for me, he unexpectedly went on PTO for 3
+                    weeks in the middle of the design process. </p>
+                <figure>
+                    <img src="../images/projects/redhat/process.png">
+
+                </figure>
+
+                <p> While I was individually responsible for all of the design deliverables, I had incredible support
+                    from 3 designers at weekly design reviews and 1:1s. A user researcher also guided me through
+                    creating a usability testing script.
+
+                    <figure>
+                        <img src="../images/projects/redhat/lowfiprezo.gif">
+                        <figcaption> Involving the entire stakeholder team (virtually) for discussions with impact on
+                            the overall product, such as the competitive analysis takeaways and exploring low-fidelity
+                            design directions (shown above). </figcaption>
+                    </figure>
+
+            </div>
+
+
+
+        </div>
+
+        <hr class="solid">
+
+        <div class="row">
+            <div>
+                <h2> The design (part 1) </h2>
+            </div>
+            <div>
+
+
+                <h3> All artifacts view – Looking for an artifact </h3>
+
+                <p> Based on the user stories, it seemed like there were 2 distinct scenarios to design for: hunting for
+                    a specific artifact and discovering an artifact. The data should be displayed in a way that is
+                    suitable for the different user goal of each scenario.
+
+                    <h4> Displaying data in a table vs. grid </h4>
+                    <p> A table or list with filtering and sorting options would help a user systematically find a
+                        specific artifact. A grid view with cards is better suited for "discovery", where a user may
+                        need the help of the description to understand what the artifact is. </p>
+
+
+                </p>
+
+                <figure>
+                    <img src="../images/projects/redhat/listvsgrid.png">
+                    <figcaption> </figcaption>
+                </figure>
+
+                <p> Thankfully the ability to toggle between two different views is already in use in a related product
+                    so after checking with engineering, I proposed the use of both the table and grid. But I wasn't sure
+                    what data to include in the design of the table item or card – what information would be most
+                    critical for users? </p>
+
+                <!-- <h4> MVP </h4>
+                <p> The main issue is that with likely dozens to hundreds of artifacts stored in the registry, it may be
+                    difficult for a user to find what they are looking for quickly and with confidence. </p>
+                
+
+                <figure>
+                    <img src="../images/projects/redhat/original_list.png">
+                    <figcaption> This simple list view with pagination works, but it could be better. </figcaption>
+                </figure> -->
+
+                <h4> Preview for confidence </h4>
+                <!-- <p> I saw how a competitor divided "artifacts" into different "registries", which inspired me to
+                    consider ways to organize artifacts so that users have more confidence in knowing where to look.
+                    During the low-fi stages, I explored ideas such as artifact groups and a favouriting feature. The
+                    idea of groups was well recieved by product and engineering, but we decided further exploration was
+                    out of scope for the time I had left. </p> -->
+                <p> To make up for any shortcomings in the data shown in the table items, I decided a way to preview
+                    would
+                    help users confirm they are accessing the right artifact – which is especially helpful in the
+                    browsing scenario. The ability to preview also is common pattern in other developer-loved
+                    applications such as Github and some API management softwares. </p>
+                <figure>
+                    <img src="../images/projects/redhat/expandvsdrawer.png">
+                    <figcaption> Two patterns I considered for the previewing interaction: expandable table rows and
+                        side drawer.</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="../images/projects/redhat/artifactlist.gif">
+                    <figcaption> Click on a table item to open the preview panel, or click directly on the name of the
+                        artifact to go directly to the detail page.</figcaption>
+                </figure>
+
+            </div>
+
+        </div>
+
+        <hr class="solid">
+
+        <div class="row">
+            <div>
+                <h2> The design (part 2) </h2>
+            </div>
+            <div>
+                <h3> Artifact detail view - Managing the artifact and its versions </h3>
+                <p>The design of this screen was the most challenging. It had to support multiple user tasks related to
+                    the referencing, editing, state management, etc. of the different versons of an artifact. Figuring
+                    out the information architecture first was key to make sure the design was an accurate
+                    representation of the data model that already existed on the backend. </p>
+                <h4> Information architecture attempts </h4>
+                <p> I started by trying to create a content audit to help me understand all of the technical details
+                    upfront. However, I learned that the stakeholder team had ambiguous requirements for the content due
+                    to on-going planning for future features. We decided to just base my design on the MVP, which I
+                    referenced to diagram a few information architecture proposals: </p>
+
+                <figure>
+                    <img src="../images/projects/redhat/IA_unsure.png">
+                </figure>
+
+                <p> The diagrams helped me uncover a few more technical details, but I was having trouble using them to
+                    communicate with the engineering stakeholders. I jumped into low-fidelity wireframing with the goal
+                    of using them to validate the data representation. #KnowWhatIWantWhenISeeIt</p>
+                <h4> Handling multiple active versions </h4>
+                <p> The most important "insight" for this design decision was that the versioning of an artifact isn't
+                    necessarily linear. So the version that could be of interest to the user isn't always the most
+                    recent one, especially when there may be different versions for multiple projects/applications. </p>
+                <!-- <p> There may be multiple versions of an artifact that are "active" and up to dozens of versions. A
+                    dropdown would not be suited for displaying a large number of versions, and it suggests that the
+                    latest version is the only one of interest (which might not always true in the case of the Service
+                    Registry). </p> -->
+
+
+                <figure>
+                    <img src="../images/projects/redhat/detailscomp.png">
+                </figure>
+
+                <p> After discussing the priority of use cases with the team, we decided to proceed with Option A. It
+                    would allow users to quickly toggle between versions, which would support their ability to make
+                    comparisons and contextualize changes. I created another set of wireframes based on the discussion
+                    and to account for additional use cases, but the lead engineer went on PTO before I could validate
+                    them with him. </p>
+                <p> I usually want to validate my ideas before going into higher-fidelity and visual design. Except with
+                    the main stakeholder absent and little time remaining, it was best to start fleshing out the design
+                    using Patternfly components. </p>
+
+
+                <figure>
+                    <img src="../images/projects/redhat/attempt1.png">
+                    <figcaption> Iteration #1 </figcaption>
+                </figure>
+
+                <p> The main issue was that the design contradicted the back-end data model. Other designers also
+                    pointed out that there was clutter and no hiearchy to all the actions sprinkled across the screen.
+                </p>
+                <figure>
+                    <img src="../images/projects/redhat/attempt2.png">
+                    <figcaption> Iteration #2 </figcaption>
+                </figure>
+                <p> Some weren't feasible with Patternfly components... </p>
+
+                <figure>
+                    <img src="../images/projects/redhat/attempt3.png">
+                    <figcaption> Iteration #3 </figcaption>
+                </figure>
+
+                <p> By now the lead engineer had returned (yay!) and I was able to make the last few iterations with his
+                    input. </p>
+
+
+                <figure>
+                    <img src="../images/projects/redhat/artifacttabs.gif">
+                    <figcaption> Last iteration, showing the tabs. </figcaption>
+                </figure>
+
+                <p> There's some unrefined design choices to revisit, but the main structure was
+                    established and ready for testing. </p>
+            </div>
+
+        </div>
+
+        <hr class="solid">
+
+        <div class="row">
+            <div>
+                <h2> Next steps </h2>
+            </div>
+            <div>
+                <h3> Planning a usability test </h3>
+                <p> Once I wrapped up my iterations on the artifact details screen, it was time to identify the areas
+                    that were successful and those that needed more iteration from future designers on the product. I
+                    prepared a clickable prototype in Marvel and with the guidance of a user researcher, I drafted a
+                    30-minute script for a task analysis. The moderator would record whether or not the participant had
+                    successfully completed each task and how difficult the participant thought it was. </p>
+                <p> We were not able to finish recruiting test participants before the end of my internship, although I
+                    was able to moderate a test run to find areas in the script to adjust. #testingthetest</p>
+            </div>
+
+        </div>
+
+        <!-- <div class="row">
+            <div>
+                <h2> Reflections </h2>
+            </div>
+            <div>
+
+                <h3> A lesson in navigating ambiguity </h3>
+                <p> Share work early and often </p>
+
+            </div>
+
+        </div> -->
+
+
+
+
+    </div>
+</body>

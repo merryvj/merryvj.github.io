@@ -1,0 +1,75 @@
+
+@import url("../main4.css");
+@import url("project.css");
+
+section{
+    margin-bottom: 3vh;
+}
+
+
+
+.designWrapper{
+    max-width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+
+.designWrapper div:first-child{
+  padding-right: 1.4em;
+}
+
+.designWrapper div p:nth-child(3){
+  font-size: 0.7em;
+}
+.designWrapper div p:nth-child(2){
+  margin-bottom: 0;
+  border-bottom: solid 1px;
+}
+img{
+    width: 100%;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.10)
+}
+
+.imgRow{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.hero{
+  height: 200px !important;
+  background: linear-gradient(#fdfaff 40%, #fff 100%) !important;
+}
+
+.hero h1{
+  border-left: solid 6px #a536e0;
+}
+
+#logosGrid img{
+    box-shadow: none !important;
+    border-radius: 0px !important;
+}
+
+
+#logosGrid div{
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.10);
+    border-radius: 6px;
+    padding: 60px;
+    height: 100px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+#vector{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+}
+
+#vector img:first-child{
+    box-shadow: none;
+}
