@@ -192,7 +192,19 @@ nav > .right > a.active{
 }
 
 
-x
+footer{
+    background: linear-gradient(180deg, #f8f8f8 61.57%, rgba(255, 255, 255, 0) 100%), linear-gradient(90deg, rgba(251, 237, 150, 0.3) 0%, rgba(171, 236, 214, 0.3) 100%);
+    display: block;
+    padding: 4rem 0;
+}
+
+hr {
+    margin: 4em 0;
+    background-color: black;
+    opacity: 0.1;
+    height: 2px;
+    border: none;
+}
 /* 
 a.lined{
     padding-bottom: 5px;
